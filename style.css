@@ -16,20 +16,14 @@ header, main{
     margin: 10px auto 0px;
 } 
 
-main {
-    /* border: red 1px solid; */
-    min-height: 62vh;
+ul{
+    list-style: circle;
+    list-style-position: inside;
+    line-height: 30px;
 }
-
-
 
 nav ul{
     list-style:none;
-}
-
-ul{
-   list-style: circle;
-   list-style-position: inside;
 }
 
 nav ul li{
@@ -49,9 +43,8 @@ a{
     color: #F0E68C;
 }
 
-a:hover {
+li a:hover {
     color: #FFFF00;
-    
 }
 
 p{
@@ -59,15 +52,42 @@ p{
     margin: 15px;
 }
 
+main {
+    min-height: 62vh;
+}
+section{
+    display: flex;
+}
+
+.botton, .btnHome{
+    border-radius: 5px;
+    text-transform: uppercase; 
+    font-family: "Arial Black", "Arial Bold", Arial, sans-serif;
+}
+
+.btnHome {
+    background-color: aqua;
+    margin: 50px auto;
+    height: 50px;
+    width: 100px;
+    padding: 10px 8px;  
+}
+
+.btnHome a {
+    color:#000;
+    font-size: 14px;
+}   
+
+.btnHome:hover{
+    background-color: #FFFF00;
+}
+
 .botton {
-    text-align: center;
     background-color: #FFFF00;
     height: 35px;
     width: 250px;
-    border-radius: 5px;
-    border: 0;
-    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
     margin: 20px;
+    font-size: 12px;
 }
 
 .botton:hover {
@@ -84,6 +104,5 @@ footer {
 
 footer p{
     text-align: center;
-
 }
 
