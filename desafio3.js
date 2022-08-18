@@ -17,7 +17,7 @@ function clicar() {
             break
         }
         else if (cont == 0){
-            alert(`Game over!\n Infelizmente, você não acertou. O número era ${computador}`)
+            alert(`Game over! \nInfelizmente, você não acertou. O número era ${computador}`)
         }
         else{
             alert(`Infelizmente você errou. Você tem mais ${cont} tentativas.`)
