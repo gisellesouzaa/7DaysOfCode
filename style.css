@@ -113,13 +113,12 @@ footer p{
 }
 
 .calculator {
-    width: 300px;
+    width: 250px;
     margin: 0 auto;
-    background-color: #FBAB18;
-    padding: 20px;
+    background-color: #FFD700;
+    /* background-color: #FBAB18; */
+    padding: 17px;
     border-radius: 5px;
-    box-shadow: 0 0 15px rgb(5, 5, 154);
-   box-shadow: 0 0 15px rgb(100, 96, 96);  
     box-shadow: 0 0 20px #2F4F4F;
 }
 
@@ -127,12 +126,12 @@ footer p{
     display: flex;
     justify-content: flex-end;
     width: 100%;
-    height: 75px;
-    margin-bottom: 11px;
-    padding: 11px;
+    height: 63px;
+    margin-bottom: 9px;
+    padding: 9px;
     background-color: rgb(3, 3, 28);
     color: white;
-    font: normal 3rem serif;
+    font: normal 2.5rem serif;
     overflow: hidden;
     border-radius: 5px;
 }
@@ -140,22 +139,37 @@ footer p{
 .calculator-buttons{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 10px; /*PESQUISAR*/
+    grid-gap: 8px; 
 }
 
 .calculator button{
     background-color: rgb(3, 3, 28);
     color: white;
-    padding: 15px;
+    padding: 12px;
     border-radius: 5px;
-    font-size: 1rem;
+    font-size: 0.9rem;
     outline: none;
     cursor: pointer;
     border: 2px solid rgb(3, 3, 28);
 }
 
+#limparCalculo {
+    border-radius: 50%;
+}
+
+#tecla0 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+#igual {
+    grid-column-start: 4;
+    grid-row-start: 4;
+    grid-row-end: 6;
+}
+
 button:hover{
-    background-color: #FFD700;
+    background-color: #FFFF00;
     color: black;
 }
 
