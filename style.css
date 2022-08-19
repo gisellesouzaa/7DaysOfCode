@@ -106,3 +106,56 @@ footer p{
     text-align: center;
 }
 
+#calculadora {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.calculator {
+    width: 300px;
+    margin: 0 auto;
+    background-color: #FBAB18;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgb(5, 5, 154);
+   box-shadow: 0 0 15px rgb(100, 96, 96);  
+    box-shadow: 0 0 20px #2F4F4F;
+}
+
+.display{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    height: 75px;
+    margin-bottom: 11px;
+    padding: 11px;
+    background-color: rgb(3, 3, 28);
+    color: white;
+    font: normal 3rem serif;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.calculator-buttons{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 10px; /*PESQUISAR*/
+}
+
+.calculator button{
+    background-color: rgb(3, 3, 28);
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 1rem;
+    outline: none;
+    cursor: pointer;
+    border: 2px solid rgb(3, 3, 28);
+}
+
+button:hover{
+    background-color: #FFD700;
+    color: black;
+}
+
