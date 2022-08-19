@@ -42,25 +42,41 @@ function clicar() {
         const tipoCalculo = operacao;
         switch (tipoCalculo) {
             case '1':
-                let resultado1 = soma(n1, n2)
-                alert(`A soma de ${n1} + ${n2} = ${resultado1}`);
+                alert(`A soma de ${n1} + ${n2} = ${soma(n1, n2)}`);
                 break;
             case '2':
-                let resultado2 = subtratrai(n1, n2)
-                alert(`A subtração de ${n1} - ${n2} = ${resultado2}`);
+                alert(`A subtração de ${n1} - ${n2} = ${subtratrai(n1, n2)}`);
                 break;
             case '3':
-                let resultado3 = multiplica(n1, n2)
-                alert(`A multiplicação de ${n1} x ${n2} = ${resultado3}`);
+                alert(`A multiplicação de ${n1} x ${n2} = ${multiplica(n1, n2)}`);
                 break;
             case '4':
-                let resultado4 = divide(n1, n2)
-                alert(`A divisão de ${n1} / ${n2} = ${resultado4}`);
+                alert(`A divisão de ${n1} / ${n2} = ${divide(n1, n2)}`);
                 break;
-            // default:
-            //     break;
         }
     } while(operacao === "1" || operacao === "2" || operacao === "3" || operacao === "4");
     alert("Até a próxima!");
 }
 
+// CALCULADORA:
+
+function inserir(numDigitado){
+    var numero = document.getElementById('display').innerHTML;
+    document.getElementById('display').innerHTML = numero + numDigitado;
+}
+
+function limparTudo(){
+    document.getElementById('display').innerHTML = "";
+}
+
+function apagar(){
+    var resultado = document.getElementById('display').innerHTML;
+    document.getElementById('display').innerHTML = resultado.substring(0, resultado.length -1);
+}
+
+function calcular(){
+    var resultado = document.getElementById('display').innerHTML;
+    if (resultado){
+        document.getElementById('display').innerHTML = eval(resultado);
+    }
+}

@@ -41,31 +41,28 @@
             <p>Como complemento ao desafio, também fiz a calculadora completa:</p>
 
             <div class="calculator">
-                <div class="display" id="display">123,12</div>
+                <div class="display" id="display"></div>
                 <div class="calculator-buttons">
-                    <button id="limparCalculo">C</button>
-                    <button id="backspace">«</button>
-                    <button id="operadorDividir">/</button>
-                    <button id="operadorMultiplicar">*</button>
-                    <button id="tecla7">7</button>
-                    <button id="tecla8">8</button>
-                    <button id="tecla9">9</button>
-                    <button id="operadorSubtrair">-</button>
-                    <button id="tecla4">4</button>
-                    <button id="tecla5">5</button>
-                    <button id="tecla6">6</button>
-                    <button id="operadorAdicionar">+</button>
-                    <button id="tecla1">1</button>
-                    <button id="tecla2">2</button>
-                    <button id="tecla3">3</button>
-                    <button id="igual">=</button>
-                    <button id="tecla0">0</button>
-                    <button id="decimal">,</button>
-
+                    <button id="limparCalculo" onclick="limparTudo()">C</button>
+                    <button id="backspace" onclick="apagar()">«</button>
+                    <button id="Dividir" onclick="inserir('/')">/</button>
+                    <button id="Multiplicar" onclick="inserir('*')">x</button>
+                    <button id="tecla7" onclick="inserir('7')">7</button>
+                    <button id="tecla8" onclick="inserir('8')">8</button>
+                    <button id="tecla9" onclick="inserir('9')">9</button>
+                    <button id="Subtrair" onclick="inserir('-')">-</button>
+                    <button id="tecla4" onclick="inserir('4')">4</button>
+                    <button id="tecla5" onclick="inserir('5')">5</button>
+                    <button id="tecla6" onclick="inserir('6')">6</button>
+                    <button id="Adicionar" onclick="inserir('+')">+</button>
+                    <button id="tecla1" onclick="inserir('1')">1</button>
+                    <button id="tecla2" onclick="inserir('2')">2</button>
+                    <button id="tecla3" onclick="inserir('3')">3</button>
+                    <button id="igual" onclick="calcular()" >=</button>
+                    <button id="tecla0" onclick="inserir('0')">0</button>
+                    <button id="virgula" onclick="inserir(',')">,</button>
                 </div>
             </div>
-
-
         </section>
     </main>
 
