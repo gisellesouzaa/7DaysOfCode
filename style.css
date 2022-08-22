@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
 *{
     padding: 0;
     margin: 0;
@@ -116,7 +118,6 @@ footer p{
     width: 250px;
     margin: 0 auto;
     background-color: #FFD700;
-    /* background-color: #FBAB18; */
     padding: 17px;
     border-radius: 5px;
     box-shadow: 0 0 20px #2F4F4F;
@@ -173,3 +174,20 @@ button:hover{
     color: black;
 }
 
+#listaCompras {
+    margin: 30px auto ;
+    background-color: aqua;
+    color: #000;
+    font-family: 'Indie Flower', cursive;
+    font-size: 16px;
+    background-image: url(./blocoDeNotas.png);
+    background-repeat: no-repeat ;
+    background-size:cover ;
+    min-height: 400px;
+    width: 300px;
+    padding: 60px 25px;
+    border-radius: 30px;
+    box-shadow: #1C1C1C 5px 5px 5px;
+    box-shadow: 0 0 20px #696767;
+    opacity: 0;
+}
